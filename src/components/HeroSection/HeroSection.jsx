@@ -7,7 +7,7 @@ const HeroSection = () => {
         <HeroSectionStyle>
             <div className="hero-left-side">
                 <AppAvalible />
-                <HeroSectionText className="hero-text">Choose your winter <span className="look-word">look<span className="look-word-star">*</span></span> apparel</HeroSectionText>
+                <HeroSectionText className="hero-text animate__animated animate__fadeInLeft animate__slow">Choose your winter <span className="look-word">look<span className="look-word-star">*</span></span> apparel</HeroSectionText>
             </div>
             <TextImageMask />
         </HeroSectionStyle>

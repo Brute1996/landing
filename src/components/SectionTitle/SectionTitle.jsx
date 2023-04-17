@@ -2,7 +2,7 @@ import { SectionTitleStyle } from "./SectionTitle.styled";
 
 const SectionTitle = ({children}) => {
     return (
-        <SectionTitleStyle>{children}</SectionTitleStyle>
+        <SectionTitleStyle data-aos="fade-down">{children}</SectionTitleStyle>
     )
 };
 

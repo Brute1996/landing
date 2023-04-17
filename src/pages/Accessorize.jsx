@@ -1,8 +1,8 @@
+import { Navigate } from "react-router-dom";
+
 const Accessorize = () => {
-    return (
-        <>
-        </>
-    )
+
+    return  <Navigate to="/not-avaliable" replace={true} />
 };
 
 export default Accessorize;

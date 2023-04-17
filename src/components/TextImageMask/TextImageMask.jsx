@@ -5,8 +5,8 @@ import ImageMask from "./imageMask";
 const TextImageMask = () => {
 
     return (
-        <TextImageMaskStyle>
-            <ImageMask test={ImageMaskBackground}/>
+        <TextImageMaskStyle className="animate__animated animate__fadeInRight animate__slow">
+            <ImageMask img={ImageMaskBackground}/>
         </TextImageMaskStyle>
     )
 };

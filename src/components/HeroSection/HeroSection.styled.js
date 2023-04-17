@@ -1,8 +1,30 @@
 import styled from "@emotion/styled";
 
 export const HeroSectionStyle = styled.div`
-  padding: 45px 0 135px;
   display: flex;
+
+  @media (min-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 30px 0 75px;
+
+    .hero-left-side {
+      display: flex;
+      gap: 50px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 1351px) {
+    flex-direction: row;
+    padding: 45px 0 135px;
+
+    .hero-left-side {
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+    }
+  }
 `;
 
 export const HeroSectionText = styled.p`
@@ -14,7 +36,15 @@ export const HeroSectionText = styled.p`
   text-transform: uppercase;
 
   max-width: 503px;
-  margin-top: 335px;
+
+  @media (min-width: 768px) {
+    font-size: 80px;
+  }
+
+  @media (min-width: 1351px) {
+    margin-top: 335px;
+    font-size: 90px;
+  }
 
   .look-word {
     position: absolute;
@@ -26,6 +56,14 @@ export const HeroSectionText = styled.p`
     border-radius: 9px;
     padding: 0 8px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: 768px) {
+      left: 268px;
+    }
+
+    @media (min-width: 1351px) {
+      left: 298px;
+    }
   }
 
   .look-word-star {

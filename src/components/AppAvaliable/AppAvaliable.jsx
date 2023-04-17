@@ -8,17 +8,17 @@ export const AppAvalible = () => {
         <AppAvaliableStyle>
             <AvaliableAppList>
                 <li>
-                    <Link className="app-link">
+                    <Link className="app-link animate__animated animate__rotateInDownLeft animate__slow">
                         <AppleIcon />
                     </Link>
                 </li>
                 <li>
-                    <Link className="app-link">
+                    <Link className="app-link animate__animated animate__rotateInDownRight animate__slow">
                         <AndroidIcon />
                     </Link>
                 </li>
             </AvaliableAppList>
-            <h3 className="app-avaliable-title">App available</h3>
+            <h3 className="app-avaliable-title animate__animated animate__fadeInDown animate__slow">App available</h3>
         </AppAvaliableStyle>
     )
 };

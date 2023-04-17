@@ -27,11 +27,22 @@ export const AvaliableAppList = styled.ul`
 
   li {
     border-radius: 50%;
+    transition: transform 300ms;
+
+    &:hover,
+    &:focus {
+      transform: rotate(-10deg);
+    }
   }
 
   li:not(:first-of-type) {
     border: 1px solid #e1e3e9;
     position: absolute;
     left: 43.5px;
+
+    &:hover,
+    &:focus {
+      transform: rotate(10deg);
+    }
   }
 `;
