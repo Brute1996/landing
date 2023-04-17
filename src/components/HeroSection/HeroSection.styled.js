@@ -2,27 +2,35 @@ import styled from "@emotion/styled";
 
 export const HeroSectionStyle = styled.div`
   display: flex;
+  flex-direction: column-reverse;
+  padding: 20px 0 45px;
+
+  .hero-left-side {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (min-width: 768px) {
     flex-direction: column-reverse;
     padding: 30px 0 75px;
 
     .hero-left-side {
-      display: flex;
       gap: 50px;
-      margin: 0 auto;
-      margin-top: 30px;
+      margin-top: 45px;
     }
   }
 
-  @media (min-width: 1351px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
     padding: 45px 0 135px;
 
     .hero-left-side {
+      margin: 0;
       flex-direction: column;
       gap: 0;
-      margin: 0;
+      align-items: start;
     }
   }
 `;
@@ -31,24 +39,26 @@ export const HeroSectionText = styled.p`
   position: relative;
   font-family: "Oswald";
   font-weight: 500;
-  font-size: 90px;
+  font-size: 45px;
   line-height: 1.17;
   text-transform: uppercase;
 
   max-width: 503px;
+  width: 265px;
 
   @media (min-width: 768px) {
+    width: auto;
     font-size: 80px;
   }
 
-  @media (min-width: 1351px) {
+  @media (min-width: 1200px) {
     margin-top: 335px;
     font-size: 90px;
   }
 
   .look-word {
     position: absolute;
-    left: 298px;
+    left: 148px;
     top: 50%;
     transform: rotate(10.48deg) translate(0, -50%);
 
@@ -61,7 +71,7 @@ export const HeroSectionText = styled.p`
       left: 268px;
     }
 
-    @media (min-width: 1351px) {
+    @media (min-width: 1200px) {
       left: 298px;
     }
   }
@@ -69,8 +79,18 @@ export const HeroSectionText = styled.p`
   .look-word-star {
     position: absolute;
     line-height: 1.47;
-    top: -38px;
-    right: -27px;
+    top: -21px;
+    right: -12px;
     transform: rotate(-10.48deg);
+
+    @media (min-width: 768px) {
+      top: -38px;
+      right: -25px;
+    }
+
+    @media (min-width: 1200px) {
+      top: -38px;
+      right: -27px;
+    }
   }
 `;

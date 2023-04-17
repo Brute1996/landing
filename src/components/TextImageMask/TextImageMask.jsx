@@ -5,7 +5,7 @@ import ImageMask from "./imageMask";
 const TextImageMask = () => {
 
     return (
-        <TextImageMaskStyle className="animate__animated animate__fadeInRight animate__slow">
+        <TextImageMaskStyle className="animate__animated animate__fadeInRight animate__slower animate__delay-3s">
             <ImageMask img={ImageMaskBackground}/>
         </TextImageMaskStyle>
     )

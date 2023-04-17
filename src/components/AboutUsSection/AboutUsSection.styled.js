@@ -7,7 +7,11 @@ export const AboutUsSectionStyle = styled.div`
   .about-us-text {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.68;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 `;

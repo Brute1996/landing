@@ -1,21 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
-import { HeaderStyle, NavMenuStyle } from "./Header.styled";
-import BuyButton from "../BuyButton/BuyButton";
+import { HeaderStyle } from "./Header.styled";
+import MobMenuBar from "../MobMenuBar/MobMenuBar";
+import StaticMenuBar from "../StaticMenuBar/StaticMenuBar";
 
 const Header = () => {
     return (
         <>
             <HeaderStyle>
-                <NavMenuStyle className="animate__animated animate__fadeInDown animate__slow">
-                    <Link className="logo" aria-label="logo and link to homepage" to='/'>Landing</Link>
-                    <ul className="nav-list">
-                        <li className="nav-list-item"><NavLink to='/clothes'>Clothes</NavLink></li>
-                        <li className="nav-list-item"><NavLink to='/sneakers'>Sneakers</NavLink></li>
-                        <li className="nav-list-item"><NavLink to='/bags'>Bags</NavLink></li>
-                        <li className="nav-list-item"><NavLink to='/accessorize'>Accessorize</NavLink></li>
-                    </ul>
-                </NavMenuStyle>
-                <BuyButton />
+                <MobMenuBar />
+                <StaticMenuBar />
             </HeaderStyle>
         </>
     )

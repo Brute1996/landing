@@ -23,15 +23,27 @@ const Slider = () => {
             <Swiper
                 style={{ position: 'static' }}
                 modules={[Navigation, Autoplay]}
-                spaceBetween={42}
                 loop={true}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
                 }}
-                slidesPerView={4}
                 centeredSlides={true}
                 speed={600}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1000: {
+                        slidesPerView: 4,
+                        spaceBetween: 42,
+                    }
+                }}
             >
                 <SwiperSlide><img src={slide0} alt="slider" /></SwiperSlide>
                 <SwiperSlide><img src={slide1} alt="slider" /></SwiperSlide>

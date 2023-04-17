@@ -4,16 +4,17 @@ export const BuyButtonStyle = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-size: 28px;
   font-family: "Oswald";
   font-weight: 700;
-  font-size: 34px;
+
   line-height: 1.47;
   color: #fff;
   text-transform: uppercase;
 
-  width: 106px;
-  height: 106px;
+  width: 76px;
+  height: 76px;
+
   border-radius: 50%;
 
   background: #f54329;
@@ -21,6 +22,12 @@ export const BuyButtonStyle = styled.button`
   transform: rotate(19.5deg);
 
   transition: scale 100ms;
+
+  @media (min-width: 768px) {
+    font-size: 34px;
+    width: 106px;
+    height: 106px;
+  }
 
   &:hover {
     scale: 1.1;

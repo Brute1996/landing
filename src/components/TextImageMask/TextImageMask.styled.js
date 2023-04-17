@@ -1,6 +1,15 @@
 import styled from "@emotion/styled";
 
 export const TextImageMaskStyle = styled.div`
+  display: flex;
+  justify-content: center;
+
+  svg {
+    image {
+      background-color: #fff;
+    }
+  }
+
   @media (min-width: 768px) {
     margin: 0 auto;
   }
