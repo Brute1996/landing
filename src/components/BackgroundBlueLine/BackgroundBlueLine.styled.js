@@ -1,16 +1,26 @@
 import styled from "@emotion/styled";
 
 export const BlueLineAnimate = styled.svg`
+  position: absolute;
+  width: 110%;
+  top: 25%;
+  left: -3%;
+
+  @media (min-width: 1200px) {
+    top: 7%;
+    left: -3%;
+  }
+
   path {
     animation: line-draw 17s linear infinite;
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
+    stroke-width: 12;
+
+    @media (min-width: 1200px) {
+      stroke-width: 6;
+    }
   }
-  position: absolute;
-  top: -34%;
-  left: -2%;
-  width: 110%;
-  height: 100%;
 
   @keyframes line-draw {
     0% {

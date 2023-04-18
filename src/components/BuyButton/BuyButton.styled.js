@@ -23,17 +23,17 @@ export const BuyButtonStyle = styled.button`
 
   transition: scale 100ms;
 
-  @media (min-width: 768px) {
-    font-size: 34px;
-    width: 106px;
-    height: 106px;
-  }
-
   &:hover {
     scale: 1.1;
   }
 
   &:active {
     scale: 0.9;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 34px;
+    width: 106px;
+    height: 106px;
   }
 `;

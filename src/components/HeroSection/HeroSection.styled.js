@@ -10,6 +10,7 @@ export const HeroSectionStyle = styled.div`
     gap: 30px;
     flex-direction: column;
     align-items: center;
+    margin-top: 45px;
   }
 
   @media (min-width: 768px) {
@@ -18,7 +19,6 @@ export const HeroSectionStyle = styled.div`
 
     .hero-left-side {
       gap: 50px;
-      margin-top: 45px;
     }
   }
 
@@ -66,6 +66,24 @@ export const HeroSectionText = styled.p`
     border-radius: 9px;
     padding: 0 8px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+    animation: pulsate 5s infinite;
+
+    @keyframes pulsate {
+      0% {
+        scale: 1;
+      }
+      50% {
+        scale: 1.1;
+      }
+      100% {
+        scale: 1;
+      }
+    }
+    transition: background-color 500ms;
+    &:hover {
+      background-color: #f54329;
+    }
 
     @media (min-width: 768px) {
       left: 268px;

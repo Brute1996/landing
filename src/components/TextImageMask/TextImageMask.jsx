@@ -1,13 +1,10 @@
-import { TextImageMaskStyle } from "./TextImageMask.styled";
 import ImageMaskBackground from "../../images/img/create-text-img.jpg"
-import ImageMask from "./imageMask";
+import ImageMaskSvg from "./imageMaskSvg";
 
-const TextImageMask = () => {
+const TextImageMask = ({imageUrl}) => {
 
     return (
-        <TextImageMaskStyle className="animate__animated animate__fadeInRight animate__slower animate__delay-3s">
-            <ImageMask img={ImageMaskBackground}/>
-        </TextImageMaskStyle>
+        <ImageMaskSvg img={imageUrl ? imageUrl : ImageMaskBackground} />
     )
 };
 
