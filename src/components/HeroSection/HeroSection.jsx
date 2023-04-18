@@ -3,7 +3,16 @@ import { AppAvalible } from "../AppAvaliable/AppAvaliable";
 import BackgroundBlueLine from "../BackgroundBlueLine/BackgroundBlueLine";
 import TextImageMask from "../TextImageMask/TextImageMask";
 import { HeroSectionStyle, HeroSectionText } from "./HeroSection.styled";
-import {ReactComponent as Star} from "../../images/icons/star.svg"
+import { ReactComponent as Star } from "../../images/icons/star.svg"
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
+
+Notify.init({
+    position: "center-center",
+    clickToClose: true,
+    fontSize: '23px',
+     width: '310px',
+})
 
 const HeroSection = () => {
     const [image, setImage] = useState();
@@ -22,17 +31,12 @@ const HeroSection = () => {
         fileReader.onloadend = () => {
             setImageUrl(fileReader.result)
         }
-
-        
-        
-        // console.log(fileReader);
-        
     },[image])
 
     const handleImageSelect = (e) => {
         const file = e.target.files[0]
 
-        if(!file) return
+        if(!file) return 
         
         switch (file.type) {
             case "image/jpeg":
@@ -42,7 +46,7 @@ const HeroSection = () => {
                 setImage(file)
                 break;
             default:
-                return
+                return Notify.failure('Please select image with jpeg or png format');
         }
     };
 
