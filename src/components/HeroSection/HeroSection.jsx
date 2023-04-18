@@ -11,7 +11,7 @@ const HeroSection = () => {
 
     useEffect(() => {
         const fileReader = new FileReader();
-        
+
         if (!image) {
             return
         }

@@ -68,7 +68,6 @@ export const HeroSectionText = styled.p`
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 
     animation: pulsate 5s infinite;
-
     @keyframes pulsate {
       0% {
         scale: 1;
@@ -91,6 +90,11 @@ export const HeroSectionText = styled.p`
 
     @media (min-width: 1200px) {
       left: 298px;
+    }
+
+    cursor: pointer;
+    label {
+      cursor: pointer;
     }
   }
 
