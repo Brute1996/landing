@@ -3,6 +3,7 @@ import { AppAvalible } from "../AppAvaliable/AppAvaliable";
 import BackgroundBlueLine from "../BackgroundBlueLine/BackgroundBlueLine";
 import TextImageMask from "../TextImageMask/TextImageMask";
 import { HeroSectionStyle, HeroSectionText } from "./HeroSection.styled";
+import {ReactComponent as Star} from "../../images/icons/star.svg"
 
 const HeroSection = () => {
     const [image, setImage] = useState();
@@ -52,10 +53,13 @@ const HeroSection = () => {
                 <AppAvalible />
                 <HeroSectionText
                     className="hero-text animate__animated animate__fadeInLeft animate__slow">Choose your winter
-                    <span className="look-word" title="Click to load your image">
-                        <label>look<span className="look-word-star">*</span>
+                    <span>
+                        <label className="look-word" title="Click to load your image">look
+                            <Star className="look-word-star"/>
                             <input onChange={handleImageSelect} type="file" style={{ visibility: "hidden", width: "0", height: "0" }} />
+                             
                         </label>
+                       
                     </span> apparel </HeroSectionText>
             </div>
 

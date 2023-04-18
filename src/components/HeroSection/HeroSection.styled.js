@@ -68,6 +68,13 @@ export const HeroSectionText = styled.p`
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 
     animation: pulsate 5s infinite;
+
+    cursor: pointer;
+    transition: background-color 500ms;
+    &:hover {
+      background-color: #f54329;
+    }
+
     @keyframes pulsate {
       0% {
         scale: 1;
@@ -79,10 +86,6 @@ export const HeroSectionText = styled.p`
         scale: 1;
       }
     }
-    transition: background-color 500ms;
-    &:hover {
-      background-color: #f54329;
-    }
 
     @media (min-width: 768px) {
       left: 268px;
@@ -91,28 +94,26 @@ export const HeroSectionText = styled.p`
     @media (min-width: 1200px) {
       left: 298px;
     }
-
-    cursor: pointer;
-    label {
-      cursor: pointer;
-    }
   }
 
   .look-word-star {
     position: absolute;
     line-height: 1.47;
-    top: -21px;
-    right: -12px;
+    top: -6px;
+    right: -14px;
     transform: rotate(-10.48deg);
+    height: 30px;
+    width: 20px;
 
     @media (min-width: 768px) {
-      top: -38px;
-      right: -25px;
+      width: auto;
+      top: -3px;
+      right: -23px;
     }
 
     @media (min-width: 1200px) {
-      top: -38px;
-      right: -27px;
+      top: -3px;
+      right: -23px;
     }
   }
 `;
