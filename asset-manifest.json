@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/landing/static/css/main.10440c26.css",
+    "main.js": "/landing/static/js/main.85b68692.js",
+    "static/media/create-text-img.jpg": "/landing/static/media/create-text-img.26e6037cba81dbe63d0b.jpg",
+    "static/media/slider-img-2-min.jpg": "/landing/static/media/slider-img-2-min.db7290aa2872bc4d2ce9.jpg",
+    "static/media/slider-img-3-min.jpg": "/landing/static/media/slider-img-3-min.7a745d32e7257b52cf12.jpg",
+    "static/media/slider-img-0-min.jpg": "/landing/static/media/slider-img-0-min.8836162b3ef001a85560.jpg",
+    "static/media/slider-img-4-min.jpg": "/landing/static/media/slider-img-4-min.d87dee419101018dd029.jpg",
+    "static/media/android-icon.svg": "/landing/static/media/android-icon.0d5a58c80e211bf3fa7775385391510b.svg",
+    "static/media/apple-icon.svg": "/landing/static/media/apple-icon.ae9a57d346e0b2d722625179bf3cf435.svg",
+    "index.html": "/landing/index.html",
+    "static/media/arrow.svg": "/landing/static/media/arrow.67e19c5956352b79d63932739580f80d.svg",
+    "main.10440c26.css.map": "/landing/static/css/main.10440c26.css.map",
+    "main.85b68692.js.map": "/landing/static/js/main.85b68692.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10440c26.css",
+    "static/js/main.85b68692.js"
+  ]
+}
