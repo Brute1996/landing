@@ -46,7 +46,7 @@ const Slider = () => {
                         spaceBetween: 42,
                     }
                 }}
-            > {slidesArr.map(slide => <SwiperSlide><img src={slide} alt="slider" /></SwiperSlide>)}
+            > {slidesArr.map((slide, index) => <SwiperSlide key={index}><img src={slide} alt="slider" /></SwiperSlide>)}
             <SliderPrevButton />
             <SliderNextButton />
             </Swiper>
