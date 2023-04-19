@@ -33,5 +33,6 @@ export const MobMenuBarStyle = styled.div`
     z-index: 999;
     background-color: transparent;
     font-size: 40px;
+    color: #000;
   }
 `;

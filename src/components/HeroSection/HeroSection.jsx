@@ -57,14 +57,11 @@ const HeroSection = () => {
                 <AppAvalible />
                 <HeroSectionText
                     className="hero-text animate__animated animate__fadeInLeft animate__slow">Choose your winter
-                    <span>
-                        <label className="look-word" title="Click to load your image">look
+                    <label className="look-word" title="Click to load your image">
+                        <span>look</span>
                             <Star className="look-word-star"/>
-                            <input onChange={handleImageSelect} type="file" style={{ visibility: "hidden", width: "0", height: "0" }} />
-                             
-                        </label>
-                       
-                    </span> apparel </HeroSectionText>
+                            <input className="look-word-file-input" onChange={handleImageSelect} type="file" />
+                        </label>  apparel </HeroSectionText>
             </div>
 
             <TextImageMask imageUrl={imageUrl} />

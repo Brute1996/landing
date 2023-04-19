@@ -61,10 +61,11 @@ export const HeroSectionText = styled.p`
     left: 148px;
     top: 50%;
     transform: rotate(10.48deg) translate(0, -50%);
+    line-height: 1;
 
     background-color: #bafd37;
     border-radius: 9px;
-    padding: 0 8px;
+    padding: 5px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 
     animation: pulsate 5s infinite;
@@ -115,5 +116,18 @@ export const HeroSectionText = styled.p`
       top: -3px;
       right: -23px;
     }
+  }
+
+  .look-word-file-input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   }
 `;
